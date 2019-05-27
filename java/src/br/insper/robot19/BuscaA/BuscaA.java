@@ -61,7 +61,7 @@ public class BuscaA {
                 if(proximo != null && proximo.type != BlockType.WALL && listaUnica.contains(proximo.hashCode())==false) {
                     Node novoNode = new Node(proximo, node, acao, proximo.type.cost, end);
                     border.add(novoNode);
-                    System.out.println(listaUnica);
+                    //System.out.println(listaUnica);
                     listaUnica.add(proximo.hashCode());
                 }
             }
